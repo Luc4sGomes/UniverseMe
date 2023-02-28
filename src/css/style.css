@@ -46,3 +46,7 @@ p {
 .paragraph-banner{
   color: #483D8B;
 }
+
+.keep-info-cards {
+  text-decoration: none;
+}
