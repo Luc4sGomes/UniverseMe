@@ -6,11 +6,10 @@
 
 body {
   font-family: monospace;
-  background-color: #483D8B;
+  background-color: #483d8b;
   height: 100vh;
   width: 100vw;
 }
-
 
 p {
   font-size: 24px;
@@ -19,18 +18,22 @@ p {
   margin-left: 24px;
 }
 
+.paragraph-main:hover {
+  color: rgb(153, 152, 152);
+  transition: 400ms all ease-in-out;
+}
 
 .keep-info-main {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .row {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column wrap;
 }
 
 .card {
@@ -39,14 +42,34 @@ p {
   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
   padding: 30px;
   margin: 20px;
-  width: 400px;
-  transition: all 0.3s ease-out;
+  width: 64rem;
 }
 
-.paragraph-banner{
-  color: #483D8B;
+.card:hover {
+  background-color: rgb(196, 195, 197);
+  transition: 400ms all ease-in-out;
 }
+
+.paragraph-banner {
+  color: #483d8b;
+}
+
 
 .keep-info-cards {
   text-decoration: none;
+}
+
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #483d8b;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid gray;  /* creates padding around scroll thumb */
 }
