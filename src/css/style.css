@@ -18,6 +18,10 @@ p {
   margin-left: 24px;
 }
 
+h2 {
+  color: #000000;
+}
+
 .paragraph-main:hover {
   color: rgb(153, 152, 152);
   transition: 400ms all ease-in-out;
@@ -37,8 +41,8 @@ p {
 }
 
 .card {
-  border-radius: 16px;
-  background-color: whitesmoke;
+  border-radius: 24px;
+  background-color: white;
   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
   padding: 30px;
   margin: 20px;
@@ -46,7 +50,7 @@ p {
 }
 
 .card:hover {
-  background-color: rgb(196, 195, 197);
+  background-color: whitesmoke;
   transition: 400ms all ease-in-out;
 }
 
@@ -57,6 +61,17 @@ p {
 
 .keep-info-cards {
   text-decoration: none;
+}
+
+footer {
+  background-color: white;
+  margin-top: 64px;
+}
+
+.paragraph-footer {
+  color: gray;
+  font-size: 12px;
+  font-style: normal;
 }
 
 
@@ -73,3 +88,4 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid gray;  /* creates padding around scroll thumb */
 }
+
