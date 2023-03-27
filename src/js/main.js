@@ -1,23 +1,12 @@
-const cards = document.getElementById("card");
+const apiKey = "NsILUexllW1GPxsdbcaA2cGvRkPGE3aqKhZizmbl";
+const url =
+  "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY";
+const url2 = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 
-cards.addEventListener("click", () => {
-  console.log("oi");
-  updateDisplay();
-});
-
-
-function updateDisplay() {
-  const urlNasa = "https://api.nasa.gov/planetary/apod";
-
-  fetch(urlNasa)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Http error:${response.status}`);
-      }
-
-      return response.json();
-    })
-    .catch(error => {
-      console.log("error");
-    });
+function callUrl(url) {
+  fetch(url)
+    .then(response => response.json())
+    .then(json => console.log(json));
 }
+
+callUrl(url);
