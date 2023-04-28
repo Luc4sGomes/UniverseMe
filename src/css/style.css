@@ -61,7 +61,7 @@ h2 {
 }
 
 .paragraph-banner {
-  color: #000000;
+  color: rgb(102, 102, 102);
   text-align: center;
 }
 
@@ -72,8 +72,7 @@ h2 {
 footer {
   background-color: white;
   margin-top: 64px;
-  border-top-right-radius: 24px;
-  border-top-left-radius: 24px;
+
 }
 
 .paragraph-footer {
