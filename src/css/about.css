@@ -60,11 +60,13 @@ body {
   height: 190px;
   width: 190px;
   border-radius: 2px;
+
 }
 
 .keep-info-creators div p {
   margin-top: 16px;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .keep-info-creators p a{
