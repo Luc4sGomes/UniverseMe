@@ -38,7 +38,7 @@ body {
 
 p {
   font-size: 24px;
-  color: whitesmoke;
+  color: rgb(218, 218, 218);
   padding: 32px;
   margin-left: 24px;
   
@@ -60,7 +60,7 @@ h2 {
 }
 
 .paragraph-main:hover {
-  color: rgb(153, 152, 152);
+  color: white;
   transition: 400ms all ease-in-out;
 }
 
