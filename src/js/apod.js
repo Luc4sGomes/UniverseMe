@@ -3,9 +3,10 @@ const apiKey = "NsILUexllW1GPxsdbcaA2cGvRkPGE3aqKhZizmbl";
   "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=NsILUexllW1GPxsdbcaA2cGvRkPGE3aqKhZizmbl";
 const url2 = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";*/
 
-const url = "https://api.nasa.gov/planetary/apod?api_key=NsILUexllW1GPxsdbcaA2cGvRkPGE3aqKhZizmbl";
+//const url = "https://api.nasa.gov/planetary/apod?api_key=NsILUexllW1GPxsdbcaA2cGvRkPGE3aqKhZizmbl";
 
 // Função para renderizar os dados no HTML
+//https://api.nasa.gov/EPIC/api/natural/images?api_key=DEMO_KEY
 function renderData(data) {
   const container = document.getElementById("apod-container");
 
