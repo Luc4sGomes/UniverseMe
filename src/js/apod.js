@@ -1,36 +1,23 @@
 const apiKey = "NsILUexllW1GPxsdbcaA2cGvRkPGE3aqKhZizmbl";
-/*const url =
-  "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=NsILUexllW1GPxsdbcaA2cGvRkPGE3aqKhZizmbl";
-const url2 = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";*/
 
-//const url = "https://api.nasa.gov/planetary/apod?api_key=NsILUexllW1GPxsdbcaA2cGvRkPGE3aqKhZizmbl";
+const url = "https://api.nasa.gov/EPIC/api/natural/images?api_key=DEMO_KEY";
 
 // Função para renderizar os dados no HTML
-//https://api.nasa.gov/EPIC/api/natural/images?api_key=DEMO_KEY
 function renderData(data) {
-  const container = document.getElementById("apod-container");
+  const container = document.getElementById("container");
 
-  const title = document.createElement("h2");
-  title.textContent = data.title;
-  container.appendChild(title);
+  for (let i = 0; i < 10; i++) {
+    const item = data[i];
 
-  if (data.media_type === "image") {
-    const image = document.createElement("img");
-    image.src = data.url;
-    image.alt = data.title;
-    container.appendChild(image);
-  } else if (data.media_type === "video") {
-    const video = document.createElement("iframe");
-    video.src = data.url;
-    video.width = "560";
-    video.height = "315";
-    video.allowFullscreen = true;
-    container.appendChild(video);
+    const div = document.createElement("div");
+
+    const imageElement = document.createElement("img");
+    imageElement.src = `https://api.nasa.gov/EPIC/archive/natural/${item.date.split(" ")[0].replace(/-/g, "/")}/png/${item.image}.png?api_key=${apiKey}`;
+    imageElement.alt = item.caption;
+    container.appendChild(imageElement);
+
+
   }
-
-  const explanation = document.createElement("p");
-  explanation.textContent = data.explanation;
-  container.appendChild(explanation);
 }
 
 // Chamada da API e renderização dos dados

@@ -15,6 +15,7 @@ function renderData(data) {
     img.alt = photo.id;
     img.style.width = "280px";
     img.style.height = "280px";
+    p.style.zIndex = "1";
     gallery.appendChild(img);
     keepDate.appendChild(p);
   });

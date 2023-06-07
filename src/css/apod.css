@@ -5,14 +5,16 @@
 }
 
 body {
-  background-color: rgb(206, 205, 205);
-  height: 100vh;
+  background-color: #cdc1ff;
+  background-image: linear-gradient(316deg, #cdc1ff 0%, #e5d9f2 74%);
+
+  background-repeat: no-repeat;
+
   width: 100vw;
   font-family: monospace;
 }
 
 .container-header {
-  z-index: 3;
   height: 64px;
   position: fixed;
   width: 100%;
@@ -49,7 +51,7 @@ body {
   color: white;
 }
 
-header div a img {
+img {
   height: 40px;
   width: 40px;
   position: relative;
@@ -68,8 +70,10 @@ header div a img {
   height: 100%;
   width: 100%;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 60px;
-  text-align: center;
 }
 
 .main-info p {
@@ -77,29 +81,34 @@ header div a img {
   font-size: 20px;
 }
 
-#gallery{
+body2 {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 100%;
-  width: 100%;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-#gallery img {
-  z-index: 1;
+h1 {
+  margin-bottom: 20px;
 }
 
-#svg_rocket {
-  position: fixed;
-  z-index: 0;
-}
-
-#keep-date{
-  width: 100%;
-  height: 10%;
+#container {
+  height: 100vh;
+  width: 100vw;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  padding-bottom: 24px;
 }
 
+#container img {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  left: 50px;
+  top: 50px;
+  border-radius: 180px;
+  margin-left: 16px;
+}
