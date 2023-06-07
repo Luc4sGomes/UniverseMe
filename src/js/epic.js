@@ -4,7 +4,7 @@ const apiKey = "NsILUexllW1GPxsdbcaA2cGvRkPGE3aqKhZizmbl";
 function renderData(data) {
   const container = document.getElementById("container");
 
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 10; i++) {
     const item = data[i];
 
     const div = document.createElement("div");
