@@ -21,7 +21,6 @@ function renderData(data) {
   });
 }
 
-
 // Chamada da API e renderização dos dados
 fetch(url)
   .then(response => response.json())
